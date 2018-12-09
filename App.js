@@ -9,31 +9,22 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
+import Card from './src/card'
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
       <View style={style.container}>
-        <View style={style.other}>
-          <Text>fuckfuckfuck</Text>
-        </View>
+        <Card></Card>
       </View>
     );
   }
 }
 
 const style = StyleSheet.create({
-    container: {
-        width: 200,
-        height: 200,
-        backgroundColor: '#f40',
-        padding: 30,
-        elevation: 20
-    },
-    other: {
-        width: 30,
-        height: 30,
-        backgroundColor: '#ccc'
-    }
+  container: {
+    flex: 1,
+    backgroundColor: '#f5fcff',
+    justifyContent: 'center'
+  }
 })
